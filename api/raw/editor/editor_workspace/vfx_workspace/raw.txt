@@ -1,0 +1,17 @@
+package vfx_workspace // import "kaiju/editor/editor_workspace/vfx_workspace"
+
+
+TYPES
+
+type VfxWorkspace struct {
+	common_workspace.CommonWorkspace
+}
+
+func (w *VfxWorkspace) Close()
+
+func (w *VfxWorkspace) Hotkeys() []common_workspace.HotKey
+
+func (w *VfxWorkspace) Initialize(host *engine.Host)
+
+func (w *VfxWorkspace) Open()
+
